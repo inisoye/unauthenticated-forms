@@ -1,7 +1,7 @@
 import { useQuery } from 'react-query';
 import axios from 'axios';
 
-const url = 'https://cemcscoop.com/membership/api/Form/ui';
+const url = 'https://cemcscoop.com/membership/api/Form/public';
 
 const getFormPages = async () => {
   const { data } = await axios.get(url);
