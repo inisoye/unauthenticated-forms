@@ -1,0 +1,97 @@
+{
+  "formPages": [
+    {
+      "data": {
+        "confirmationMessage": "I, Bankole Victor Olusanjo, an employee of Chevron Nigeria Limited, hereby apply for membership of the Chevron Employees Multipurpose Cooperative Society. I have paid the sum of N1,000.00 to the CEMCS Manager in acknowledgement of the reciept details provided above. This represents my N500.00 non-refundable deposit and N500.00 for the purchase of one N5.00 share.",
+        "explanationMessage": "All the fields in this form are required. Please fill them all before attempting to submit.",
+        "fixedData": [
+          {
+            "id": 1,
+            "property": "Department",
+            "value": "BHR Upstream, Middle East, Africa, South America"
+          },
+          {
+            "id": 2,
+            "property": "Employment Date",
+            "value": "30 July 2021"
+          },
+          { "id": 3, "property": "Location", "value": "Escravos" },
+          {
+            "id": 4,
+            "property": "Position",
+            "value": "Senior HR Business Partner"
+          }
+        ],
+        "inputGroups": [
+          {
+            "id": 1,
+            "inputs": [
+              {
+                "id": 1,
+                "detail": "",
+                "fieldName": "employeeNumber",
+                "labelName": "Employee number",
+                "title": "Employee number",
+                "placeholder": "",
+                "type": "number"
+              }
+            ],
+            "name": "Employee details"
+          },
+          {
+            "id": 2,
+            "inputs": [
+              {
+                "id": 1,
+                "detail": "",
+                "fieldName": "receiptNumber",
+                "labelName": "Receipt number",
+                "title": "Receipt number",
+                "placeholder": "",
+                "type": "number"
+              },
+              {
+                "id": 2,
+                "detail": "",
+                "fieldName": "receiptDate",
+                "labelName": "Receipt date",
+                "title": "Receipt date",
+                "placeholder": "",
+                "type": "date"
+              }
+            ],
+            "name": "Initial payment receipt details"
+          },
+          {
+            "id": 3,
+            "inputs": [
+              {
+                "id": 1,
+                "detail": "",
+                "fieldName": "accountNumber",
+                "labelName": "Account number",
+                "title": "Account number",
+                "placeholder": "",
+                "type": "number"
+              },
+              {
+                "id": 2,
+                "detail": "",
+                "fieldName": "accountLocation",
+                "labelName": "Account location",
+                "title": "Account location",
+                "options": ["First", "Second", "Third"],
+                "placeholder": "",
+                "type": "select"
+              }
+            ],
+            "name": "Account information"
+          }
+        ]
+      },
+      "id": 0,
+      "name": "Member registration",
+      "url": "/member-registration"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Ilisarniq';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/Ilisarniq-Bold.eot');
+  src: url('./fonts/Ilisarniq-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Ilisarniq-Bold.woff2') format('woff2'),
+    url('./fonts/Ilisarniq-Bold.woff') format('woff'),
+    url('./fonts/Ilisarniq-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ilisarniq';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/Ilisarniq-Demi.eot');
+  src: url('./fonts/Ilisarniq-Demi.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Ilisarniq-Demi.woff2') format('woff2'),
+    url('./fonts/Ilisarniq-Demi.woff') format('woff'),
+    url('./fonts/Ilisarniq-Demi.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/Montserrat-SemiBold.eot');
+  src: url('./fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('./fonts/Montserrat-SemiBold.woff') format('woff'),
+    url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ilisarniq';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/Ilisarniq-Regular.eot');
+  src: url('./fonts/Ilisarniq-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Ilisarniq-Regular.woff2') format('woff2'),
+    url('./fonts/Ilisarniq-Regular.woff') format('woff'),
+    url('./fonts/Ilisarniq-Regular.ttf') format('truetype');
+}
