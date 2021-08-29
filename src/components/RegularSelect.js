@@ -1,7 +1,7 @@
 import tw from 'twin.macro';
 
 // Icons
-import ChevronDown from '../icons/ChevronDown';
+import SelectIcon from '../icons/SelectIcon';
 
 // Styles
 const StyledSelectLabel = tw.label`text-sm font-normal block mb-2!`;
@@ -16,7 +16,7 @@ function RegularSelect({ labelName, fieldName, options, register }) {
 
       <StyledSelectWrapper>
         <StyledIconWrapper aria-hidden>
-          <ChevronDown />
+          <SelectIcon />
         </StyledIconWrapper>
 
         <StyledSelect name={fieldName} id={fieldName} {...register(fieldName)}>
