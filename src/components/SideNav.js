@@ -103,7 +103,7 @@ function SideNav({ formPagesData }) {
               {mobileSideNavLinks}
 
               <li tw="pb-12">
-                <a href="cemcscoop.com">Return home</a>
+                <a href="https://cemcscoop.com">Return home</a>
               </li>
             </ul>
           </nav>
