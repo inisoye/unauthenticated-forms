@@ -134,7 +134,7 @@ function SingleFormPage({ name: formName, data }) {
               />
 
               <StyledCheckboxText tw="leading-6">
-                confirmationMessage}
+                {confirmationMessage}
               </StyledCheckboxText>
             </StyledCheckboxWrapper>
             {errors.confirmationMessage && (
