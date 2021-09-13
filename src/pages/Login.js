@@ -17,16 +17,14 @@ import useAuth from '../hooks/useAuth';
 const StyledLoginPageWrapper = tw.div`min-w-full min-h-screen bg-gradient-to-b from-chevyTeal to-chevyBlue flex items-center justify-center flex-shrink-0	`;
 const StyledLoginFormHeadingWrapper = tw.div`mb-7 flex justify-between`;
 const StyledLoginPageHeading = tw.h1`text-left text-3xl tracking-tighter `;
-
 const StyledLoginForm = styled.form`
   ${tw`max-w-sm p-10 mx-10 text-center bg-white rounded-lg md:w-full`};
 
   width: 500px;
 `;
-
 const StyledInputWrapper = tw.div`max-w-sm m-auto mb-7`;
 const StyledInputLabel = tw.label`font-semibold text-sm mb-2 block text-left`;
-const StyledInput = tw.input`w-full max-w-sm px-4 pt-2 pb-2.5 border border-chevyBlue-dark border-opacity-10 rounded focus:outline-none focus:ring-4 focus:ring-chevyTeal-light focus:border-chevyTeal transition duration-500 ease-in-out placeholder-chevyBlue-dark placeholder-opacity-40`;
+const StyledInput = tw.input`appearance-none w-full max-w-sm px-4 pt-2 pb-2.5 border border-chevyBlue-dark border-opacity-10 rounded focus:outline-none focus:ring-4 focus:ring-chevyTeal-light focus:border-chevyTeal transition duration-500 ease-in-out placeholder-chevyBlue-dark placeholder-opacity-40`;
 const StyledLoginButton = tw.button`w-full max-w-sm my-4 px-4 py-2.5 rounded bg-chevyTeal hover:bg-chevyBlue text-white transition duration-500 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-200 `;
 
 function Login() {
@@ -49,9 +47,12 @@ function Login() {
     });
   }
 
-  setToken(data?.token);
-  setLocalStorageItem('loggedCEMCSUserToken', data?.token);
-  setLocalStorageItem('loggedCEMCSUserName', data?.name);
+  React.useEffect(() => {
+    setToken(data?.token);
+    setLocalStorageItem('loggedCEMCSUserToken', data?.token);
+    setLocalStorageItem('loggedCEMCSUserName', data?.name);
+    setLocalStorageItem('loggedCEMCSUserLogin', data?.login);
+  }, [data, setToken]);
 
   const isErrorAlertDisplayed = isError || Boolean(loginErrorMessage);
 
@@ -64,7 +65,7 @@ function Login() {
         />
       )}
 
-      <StyledLoginPageWrapper tw="py-10">
+      <StyledLoginPageWrapper tw="py-5">
         <StyledLoginForm onSubmit={handleSubmit}>
           <StyledLoginFormHeadingWrapper>
             <StyledLoginPageHeading>Log in</StyledLoginPageHeading>
@@ -105,7 +106,7 @@ function Login() {
           <div>
             <a
               href="https://cemcscoop.com"
-              tw="max-w-xs rounded block px-2.5 pt-2 pb-2.5 transition duration-500 ease-in-out bg-transparent hover:bg-chevyTeal hover:bg-opacity-10 text-chevyTeal"
+              tw="max-w-xs rounded block text-sm px-2.5 pt-2 pb-2.5 transition duration-500 ease-in-out bg-transparent hover:bg-chevyTeal hover:bg-opacity-10 text-chevyTeal"
             >
               Return home
             </a>
